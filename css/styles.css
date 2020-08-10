@@ -7,18 +7,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
-:root {
-  --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
-  --dark-theme-color: #ffffff;
-  --title-color: #212121;
-  --desription-color: #757575;
-  --accent-color: #2196f3;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 body {
   background-color: #ffffff;
-  font-family: var(--main-font);
+  font-family: $main-font
 }
 
 img {
@@ -42,7 +34,7 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: $title-color
 }
 
 .link {
@@ -73,7 +65,7 @@ img {
 }
 
 .active {
-  color: var(--accent-color);
+  color: $accent-color
 }
 
 .is-hidden {
@@ -97,7 +89,7 @@ img {
 .logo {
   margin-right: 85px;
 
-  font-family: var(--secondary-font);
+  font-family: $secondary-font
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -106,7 +98,7 @@ img {
   color: #000000;
 }
 .logo-accent {
-  color: var(--accent-color);
+  color: $accent-color
 }
 .navigation-list,
 .address-list {
@@ -125,7 +117,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: #212121;
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms $timing-function
 }
 
 .navigation-list-item {
@@ -133,7 +125,7 @@ img {
 }
 
 .current {
-  color: var(--accent-color);
+  color: $accent-color
 }
 
 .current::after {
@@ -145,10 +137,10 @@ img {
   content: '';
   width: 100%;
   height: 4px;
-  background: var(--accent-color);
+  background: $accent-color
   border-radius: 2px;
 
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms $timing-function
 }
 
 .navigation-list-item:not(:last-child) {
@@ -177,28 +169,28 @@ img {
 
 .adress-list-link {
   color: #757575;
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms $timing-function
 }
 
 .address-list-item-svg {
   margin-right: 10px;
   fill: #757575;
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function
 }
 
 .navigation-list-link:hover,
 .navigation-list-link:focus {
-  color: var(--accent-color);
+  color: $accent-color
 }
 
 .address-list-item:hover .address-list-item-svg,
 .address-list-item:focus .address-list-item-svg {
-  fill: var(--accent-color);
+  fill: $accent-color
 }
 
 .address-list-item:hover .adress-list-link,
 .address-list-item:focus .adress-list-link {
-  color: var(--accent-color);
+  color: $accent-color
 }
 
 /* Герой */
@@ -222,7 +214,7 @@ img {
 
 .hero-title,
 .modal-btn {
-  color: var(--dark-theme-color);
+  color: $dark-theme-color
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -258,12 +250,12 @@ img {
   font-size: 16px;
   line-height: 1.87;
 
-  background-color: var(--accent-color);
+  background-color: $accent-color
   border: none;
   border-radius: 4px;
   cursor: pointer;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function
 }
 
 .modal-btn:hover,
@@ -322,12 +314,12 @@ img {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--title-color);
+  color: $title-color
 }
 .features-list-description {
   font-weight: 400;
   line-height: 1.71;
-  color: var(--desription-color);
+  color: $desription-color
 }
 /* Чем мы занимаемся */
 
@@ -368,7 +360,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--dark-theme-color);
+  color: $dark-theme-color
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -423,13 +415,13 @@ img {
   margin-bottom: 10px;
 
   font-weight: 500;
-  color: var(--title-color);
+  color: $title-color
 }
 .team-list-description {
   margin-bottom: 16px;
 
   font-weight: 400;
-  color: var(--desription-color);
+  color: $desription-color
 }
 
 .team .social-list {
@@ -440,17 +432,17 @@ img {
 .team .social-link {
   background-color: #ffffff;
   border-radius: 50%;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function
 }
 
 .team .social-link:hover,
 .team .social-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color
 }
 
 .team .social-list-item-svg {
   fill: #afb1b8;
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function
 }
 
 .team .social-link:hover .social-list-item-svg,
@@ -478,7 +470,7 @@ img {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  transition: border 250ms var(--timing-function);
+  transition: border 250ms $timing-function
 }
 
 .clients-list-item:not(:last-child) {
@@ -487,17 +479,17 @@ img {
 
 .clients-list-link-svg {
   fill: #afb1b8;
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function
 }
 
 .clients-list-link:hover,
 .clients-list-link:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color
 }
 
 .clients-list-link:hover .clients-list-link-svg,
 .clients-list-link:focus .clients-list-link-svg {
-  fill: var(--accent-color);
+  fill: $accent-color
 }
 
 /* Портфолио */
@@ -534,13 +526,13 @@ img {
   border-radius: 4px;
 
   transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function);
+    background-color 250ms $timing-function
   cursor: pointer;
 }
 .filter-list-item-btn:hover,
 .filter-list-item-btn:focus {
   color: #ffffff;
-  background-color: var(--accent-color);
+  background-color: $accent-color
 }
 
 .gallery {
@@ -595,7 +587,7 @@ img {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-color);
+  color: $title-color
 }
 
 .gallery-list-description,
@@ -608,7 +600,7 @@ img {
 
   font-size: 16px;
   line-height: 1.87;
-  color: var(--desription-color);
+  color: $desription-color
 }
 
 .gallery-list-link-image {
@@ -630,7 +622,7 @@ img {
   height: 100%;
 
   transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms $timing-function
 
   margin: 0px;
   padding-top: 63px;
@@ -686,12 +678,12 @@ footer .social-list {
 .footer-center-side .social-link {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function
 }
 
 .footer-center-side .social-link:hover,
 .footer-center-side .social-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color
 }
 
 .footer-center-side .social-list-item-svg {
@@ -705,7 +697,7 @@ footer .social-list {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--dark-theme-color);
+  color: $dark-theme-color
 }
 .contact-list-mail,
 .contact-list-tel {
@@ -722,7 +714,7 @@ footer .social-list {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--dark-theme-color);
+  color: $dark-theme-color
 }
 /* Форма */
 .footer-right-side {
@@ -745,11 +737,11 @@ footer .social-list {
   width: 358px;
   height: 50px;
 
-  font-family: var(--main-font);
+  font-family: $main-font
   font-size: 16px;
   line-height: 1.25;
   font-weight: 400;
-  color: var(--dark-theme-color);
+  color: $dark-theme-color
   opacity: 0.6;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -768,13 +760,13 @@ footer .social-list {
   padding-left: 29px;
 
   font-weight: 700;
-  font-family: var(--main-font);
+  font-family: $main-font
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--dark-theme-color);
+  color: $dark-theme-color
 
-  background-color: var(--accent-color);
+  background-color: $accent-color
 
   align-items: center;
   outline: none;
@@ -789,7 +781,7 @@ footer .social-list {
 }
 
 .footer-form-button-svg {
-  fill: var(--dark-theme-color);
+  fill: $dark-theme-color
 }
 
 /* Модалка */
@@ -825,7 +817,7 @@ footer .social-list {
   margin-top: 0px;
   margin-bottom: 30px;
 
-  color: var(--title-color);
+  color: $title-color
   font-size: 20px;
   line-height: 1, 15;
 
@@ -853,7 +845,7 @@ footer .social-list {
   color: #757575;
   transition: color 250ms var(--timing-function),
     font-size 250ms var(--timing-function),
-    transform 250ms var(--timing-function), left 250ms var(--timing-function);
+    transform 250ms var(--timing-function), left 250ms $timing-function
 }
 
 .modal-input-label-icon {
@@ -862,7 +854,7 @@ footer .social-list {
   top: 50%;
   transform: translateY(-50%);
   fill: #212121;
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function
 }
 
 .modal-input,
@@ -876,7 +868,7 @@ footer .social-list {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border 250ms var(--timing-function);
+  transition: border 250ms $timing-function
 }
 
 .modal-input {
@@ -904,7 +896,7 @@ footer .social-list {
 .modal-input:not(:placeholder-shown) + .modal-input-label {
   left: 18px;
   transform: translateY(-40px);
-  color: var(--accent-color);
+  color: $accent-color
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -913,7 +905,7 @@ footer .social-list {
 .modal-input:hover ~ .modal-input-label-icon,
 .modal-input:focus ~ .modal-input-label-icon,
 .modal-input:not(:placeholder-shown) ~ .modal-input-label-icon {
-  fill: var(--accent-color);
+  fill: $accent-color
 }
 
 .modal-comment-container {
@@ -933,7 +925,7 @@ footer .social-list {
   color: #757575;
   transition: color 250ms var(--timing-function),
     font-size 250ms var(--timing-function),
-    transform 250ms var(--timing-function);
+    transform 250ms $timing-function
 }
 
 .modal-comment:hover,
@@ -947,7 +939,7 @@ footer .social-list {
 .modal-comment:focus + .modal-comment-label,
 .modal-comment:not(:placeholder-shown) + .modal-comment-label {
   transform: translateY(-32px);
-  color: var(--accent-color);
+  color: $accent-color
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -974,12 +966,12 @@ footer .social-list {
   border-radius: 2px;
   background-color: #fff;
   transition: background-color 250ms var(--timing-function),
-    border 250ms var(--timing-function);
+    border 250ms $timing-function
 }
 
 .checked-icon {
   fill: transparent;
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function
 }
 
 .modal-checkbox:checked + .agreement-checkbox > .checked-icon {
@@ -987,8 +979,8 @@ footer .social-list {
 }
 
 .modal-checkbox:checked + .agreement-checkbox {
-  background-color: var(--accent-color);
-  border: 1.8px solid var(--accent-color);
+  background-color: $accent-color
+  border: 1.8px solid $accent-color
 }
 
 .agreement-txt,
@@ -1006,7 +998,7 @@ footer .social-list {
 }
 
 .agreement-link {
-  color: var(--accent-color);
+  color: $accent-color
 }
 
 .modal-submit-button {
@@ -1022,12 +1014,12 @@ footer .social-list {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--dark-theme-color);
-  background-color: var(--accent-color);
+  color: $dark-theme-color
+  background-color: $accent-color
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: background-clor 250ms var(--timing-function);
+  transition: background-clor 250ms $timing-function
 }
 
 .modal-submit-button:hover,
@@ -1052,10 +1044,10 @@ footer .social-list {
 
 .modal-button-close-icon {
   fill: #000;
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function
 }
 
 .modal-button-close:hover .modal-button-close-icon,
 .modal-button-close:focus .modal-button-close {
-  fill: var(--accent-color);
+  fill: $accent-color
 }
