@@ -1,2 +1,10 @@
 @import './base/normalize';
-@import '.base/variables';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/lesson';
+@import './layout/our-team';
+@import './layout/clients';
+@import './layout/portfolio';
+@import './layout/footer';
