@@ -18,7 +18,7 @@
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  transition: border 250ms var(--timing-function);
+  transition: border 250ms $timing-function;
 }
 
 .clients-list-item:not(:last-child) {
@@ -27,15 +27,15 @@
 
 .clients-list-link-svg {
   fill: #afb1b8;
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }
 
 .clients-list-link:hover,
 .clients-list-link:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
 }
 
 .clients-list-link:hover .clients-list-link-svg,
 .clients-list-link:focus .clients-list-link-svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }

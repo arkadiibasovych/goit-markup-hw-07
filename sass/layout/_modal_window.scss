@@ -22,7 +22,7 @@
   font-size: 16px;
   line-height: 1.25;
   font-weight: 400;
-  color: var(--dark-theme-color);
+  color: $dark-theme-color;
   opacity: 0.6;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -45,9 +45,9 @@
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--dark-theme-color);
+  color: $dark-theme-color;
 
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 
   align-items: center;
   outline: none;
@@ -62,7 +62,7 @@
 }
 
 .footer-form-button-svg {
-  fill: var(--dark-theme-color);
+  fill: $dark-theme-color;
 }
 
 /* Модалка */
@@ -98,7 +98,7 @@
   margin-top: 0px;
   margin-bottom: 30px;
 
-  color: var(--title-color);
+  color: $title-color;
   font-size: 20px;
   line-height: 1, 15;
 
@@ -124,9 +124,8 @@
   letter-spacing: 0.01em;
 
   color: #757575;
-  transition: color 250ms var(--timing-function),
-    font-size 250ms var(--timing-function),
-    transform 250ms var(--timing-function), left 250ms var(--timing-function);
+  transition: color 250ms $timing-function, font-size 250ms $timing-function,
+    transform 250ms $timing-function, left 250ms $timing-function;
 }
 
 .modal-input-label-icon {
@@ -135,7 +134,7 @@
   top: 50%;
   transform: translateY(-50%);
   fill: #212121;
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }
 
 .modal-input,
@@ -149,7 +148,7 @@
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border 250ms var(--timing-function);
+  transition: border 250ms $timing-function;
 }
 
 .modal-input {
@@ -177,7 +176,7 @@
 .modal-input:not(:placeholder-shown) + .modal-input-label {
   left: 18px;
   transform: translateY(-40px);
-  color: var(--accent-color);
+  color: $accent-color;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -186,7 +185,7 @@
 .modal-input:hover ~ .modal-input-label-icon,
 .modal-input:focus ~ .modal-input-label-icon,
 .modal-input:not(:placeholder-shown) ~ .modal-input-label-icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal-comment-container {
@@ -204,9 +203,8 @@
   letter-spacing: 0.01em;
 
   color: #757575;
-  transition: color 250ms var(--timing-function),
-    font-size 250ms var(--timing-function),
-    transform 250ms var(--timing-function);
+  transition: color 250ms $timing-function, font-size 250ms $timing-function,
+    transform 250ms $timing-function;
 }
 
 .modal-comment:hover,
@@ -220,7 +218,7 @@
 .modal-comment:focus + .modal-comment-label,
 .modal-comment:not(:placeholder-shown) + .modal-comment-label {
   transform: translateY(-32px);
-  color: var(--accent-color);
+  color: $accent-color;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -246,13 +244,13 @@
   border: 1.8px solid #212121;
   border-radius: 2px;
   background-color: #fff;
-  transition: background-color 250ms var(--timing-function),
-    border 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function,
+    border 250ms $timing-function;
 }
 
 .checked-icon {
   fill: transparent;
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }
 
 .modal-checkbox:checked + .agreement-checkbox > .checked-icon {
@@ -260,8 +258,8 @@
 }
 
 .modal-checkbox:checked + .agreement-checkbox {
-  background-color: var(--accent-color);
-  border: 1.8px solid var(--accent-color);
+  background-color: $accent-color;
+  border: 1.8px solid $accent-color;
 }
 
 .agreement-txt,
@@ -279,7 +277,7 @@
 }
 
 .agreement-link {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .modal-submit-button {
@@ -295,12 +293,12 @@
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--dark-theme-color);
-  background-color: var(--accent-color);
+  color: $dark-theme-color;
+  background-color: $accent-color;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: background-clor 250ms var(--timing-function);
+  transition: background-clor 250ms $timing-function;
 }
 
 .modal-submit-button:hover,
@@ -325,10 +323,10 @@
 
 .modal-button-close-icon {
   fill: #000;
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }
 
 .modal-button-close:hover .modal-button-close-icon,
 .modal-button-close:focus .modal-button-close {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }

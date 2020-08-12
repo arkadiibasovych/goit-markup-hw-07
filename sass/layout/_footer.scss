@@ -42,12 +42,12 @@ footer .social-list {
 .footer-center-side .social-link {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function;
 }
 
 .footer-center-side .social-link:hover,
 .footer-center-side .social-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .footer-center-side .social-list-item-svg {
@@ -61,7 +61,7 @@ footer .social-list {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--dark-theme-color);
+  color: $dark-theme-color;
 }
 .contact-list-mail,
 .contact-list-tel {
@@ -78,5 +78,5 @@ footer .social-list {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--dark-theme-color);
+  color: $dark-theme-color;
 }

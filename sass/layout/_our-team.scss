@@ -49,13 +49,13 @@
   margin-bottom: 10px;
 
   font-weight: 500;
-  color: var(--title-color);
+  color: $title-color;
 }
 .team-list-description {
   margin-bottom: 16px;
 
   font-weight: 400;
-  color: var(--desription-color);
+  color: $desription-color;
 }
 
 .team .social-list {
@@ -66,17 +66,17 @@
 .team .social-link {
   background-color: #ffffff;
   border-radius: 50%;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function;
 }
 
 .team .social-link:hover,
 .team .social-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .team .social-list-item-svg {
   fill: #afb1b8;
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }
 
 .team .social-link:hover .social-list-item-svg,

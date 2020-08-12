@@ -7,18 +7,18 @@ html {
 *::after {
   box-sizing: inherit;
 }
-:root {
-  --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
-  --dark-theme-color: #ffffff;
-  --title-color: #212121;
-  --desription-color: #757575;
-  --accent-color: #2196f3;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+$main-font: 'Roboto', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+$dark-theme-color: #ffffff;
+$title-color: #212121;
+$desription-color: #757575;
+$accent-color: #2196f3;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 body {
   background-color: #ffffff;
-  font-family: var(--main-font);
+  font-family: $main-font;
 }
 
 img {
@@ -42,7 +42,7 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .link {
@@ -71,11 +71,6 @@ img {
 .social-list-item:not(:last-child) {
   margin-right: 10px;
 }
-
-.active {
-  color: var(--accent-color);
-}
-
 .is-hidden {
   position: absolute;
   width: 1px;
