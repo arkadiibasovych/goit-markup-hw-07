@@ -1,3 +1,4 @@
+/* Подвал */
 footer .container {
   display: flex;
   padding-bottom: 60px;
@@ -12,6 +13,8 @@ footer {
   background-color: #2f303a;
 }
 footer .logo {
+  @extend %logo;
+
   display: block;
   color: #ffffff;
   margin-bottom: 20px;
@@ -81,9 +84,10 @@ footer .social-list {
 }
 .footer-right-side {
   margin-top: 72px;
-}
-.footer-right-side .slogan {
-  margin-bottom: 20px;
+
+  & .slogan {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-right-side-form {

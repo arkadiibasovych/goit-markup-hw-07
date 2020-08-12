@@ -3,6 +3,11 @@
 @import './utils/variables';
 
 @import './base/base';
+@import './utils/placeholder';
+
+@import './components/modal_window';
+@import './components/social-links';
+@import './components/container';
 
 @import './layout/header';
 @import './layout/hero';
@@ -12,7 +17,3 @@
 @import './layout/clients';
 @import './layout/portfolio';
 @import './layout/footer';
-
-@import './components/modal_window';
-@import './components/social-links';
-@import './components/container';

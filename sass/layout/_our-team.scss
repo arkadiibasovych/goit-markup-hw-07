@@ -3,10 +3,10 @@
 .team {
   background: #f5f4fa;
   margin-bottom: 94px;
-}
 
-.team .container {
-  padding-top: 94px;
+  & .container {
+    padding-top: 94px;
+  }
 }
 
 .team-list,
