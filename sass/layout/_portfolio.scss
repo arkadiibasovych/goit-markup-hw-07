@@ -34,11 +34,12 @@
   transition: color 250ms $timing-function,
     background-color 250ms $timing-function;
   cursor: pointer;
-}
-.filter-list-item-btn:hover,
-.filter-list-item-btn:focus {
-  color: #ffffff;
-  background-color: $accent-color;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $accent-color;
+  }
 }
 
 .gallery {
@@ -60,20 +61,20 @@
 
 .gallery-list-item {
   border: 1px solid #eeeeee;
-}
 
-.gallery-list-item:not(:nth-child(3n)) {
-  margin-right: 25px;
-}
+  &:not(:nth-child(3n)) {
+    margin-right: 25px;
+  }
 
-.gallery-list-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
 
-.gallery-list-item:hover,
-.gallery-list-item:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .gallery-list,
@@ -113,10 +114,10 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
-}
 
-.gallery-list-link-image:hover .gallery-list-description {
-  transform: translateY(0);
+  &:hover .gallery-list-description {
+    transform: translateY(0);
+  }
 }
 
 .gallery-list-description {

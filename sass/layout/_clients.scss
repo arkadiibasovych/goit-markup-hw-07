@@ -10,6 +10,10 @@
   justify-content: center;
 }
 
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .clients-list-link {
   display: flex;
   width: 170px;
@@ -19,23 +23,18 @@
   justify-content: center;
   align-items: center;
   transition: border 250ms $timing-function;
-}
-
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }
 
 .clients-list-link-svg {
   fill: #afb1b8;
   transition: fill 250ms $timing-function;
-}
 
-.clients-list-link:hover,
-.clients-list-link:focus {
-  border: 1px solid $accent-color;
-}
-
-.clients-list-link:hover .clients-list-link-svg,
-.clients-list-link:focus .clients-list-link-svg {
-  fill: $accent-color;
+  .clients-list-link:hover &,
+  .clients-list-link:focus & {
+    fill: $accent-color;
+  }
 }

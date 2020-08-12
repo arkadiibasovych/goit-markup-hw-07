@@ -14,12 +14,12 @@
   margin-bottom: 0px;
 }
 
-.lesson-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .lesson-list-item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .lesson-list-description {
